@@ -261,13 +261,19 @@
     .container-barra__contact {
         display: flex;
         justify-content: space-around;
+        flex-direction: column;
     }
     
     .container-barra__contact p {
         font-size: 1.3rem;
         font-weight: 700;
-        margin: 1rem;
+        margin: 0.5rem 2rem;
         text-align: center;
+    }
+
+    .container-barra__contact__num{
+        display: flex;
+        justify-content: center;
     }
     
     .container-barra__contact a {
@@ -364,7 +370,7 @@
         overflow: hidden;
         display: none;
         transform: scale(0);
-        background-color: rgb(218, 218, 218);
+        background-color: #000;
         width: 100%;
         height: 100vh;
     }
@@ -553,6 +559,8 @@
         background-color: #3579c272;
         height: 85vh;
         color: white;
+        height: 100%;
+        overflow-y: auto;
     }
     
     .mision-vision__text {
@@ -587,7 +595,7 @@
         padding: 2rem;
     }
     .servicios h3 {
-        color: var(--orange-color);
+        color: var(--text-color);
         font-size: 3.5rem;
         text-align: center;
         margin: 0;
@@ -601,6 +609,55 @@
         font-size: 1.6rem;
         color: #000;
         text-align: center;
+    }
+
+    .container__cards{
+        display: flex;
+        margin-top: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .card { 
+        overflow: hidden;
+        width: 30rem;
+        margin: 0.5rem;
+        background-color: #fff;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card:hover{
+        transform: scale(1.05);
+    }
+    
+    .card p{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .card h5{
+        text-align: center;
+        margin: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .card:last-child{
+        justify-items: center;
+    }
+
+    .img-card{
+        width: 30rem;   
+    }
+    
+    .card img {
+        width: 100%;
+        display: inline-block;
+        transition: all 0.5s ease;
+        height: 20rem;
     }
 
     .servicios__servicios{
@@ -631,20 +688,6 @@
         display: block;
         
     }
-
-    .container__gallery p{
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    
-    /* .servicios__list ul {
-        list-style-type: disc;
-    }
-    
-    .servicios__list li {
-        padding: 1rem;
-        font-size: 1.5rem;
-    } */
     
     .servicios__promo p {
         text-align: center;
@@ -690,34 +733,7 @@
         align-items: center;
     }
 
-    .container__gallery{
-        display: flex;
-        margin-top: 3rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
     
-    .trabajos-img { 
-        overflow: hidden;
-        width: 30rem;
-        margin: 0.5rem;
-    }
-
-    .gallery-card{
-        width: 30rem;   
-    }
-    
-    .trabajos-img img {
-        width: 100%;
-        display: inline-block;
-        transition: all 0.5s ease;
-        height: 20rem;
-    }
-
-    
-    .trabajos-img img:hover {
-        transform: scale(1.2);
-    }
 
     /* --------- PROYECTOS ----------------- */
     .proyectos{
@@ -738,7 +754,7 @@
         margin-top: 1rem;
     }
     .proyectos h3 {
-        color: var(--orange-color);
+        color: var(--text-color);
         font-size: 3.5rem;
         text-align: center;
         margin: 0;
