@@ -658,7 +658,17 @@
         display: inline-block;
         transition: all 0.5s ease;
         height: 20rem;
+        object-fit: cover;
     }
+
+    .img-card img:hover {
+        width: 100%;
+        display: inline-block;
+        transition: all 0.5s ease;
+        height: 20rem;
+        object-fit: cover;
+    }
+
 
     .servicios__servicios{
         display: flex;
@@ -743,16 +753,14 @@
     .proyectos__title{
         margin-top: 3rem;
     }
-    .proyectos__container p{
+
+    .proyectos__title p{
         font-size: 1.6rem;
         color: black;
         text-align: center;
-        margin-top: 3rem;
-    }
-    .proyectos__container p i{
-        font-size: 1.6rem;
         margin-top: 1rem;
     }
+   
     .proyectos h3 {
         color: var(--text-color);
         font-size: 3.5rem;
@@ -777,6 +785,14 @@
     .contacto h3 {
         color: white;
         font-size: 3rem;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 0.5rem;
+        padding-top: 1.5rem;
+    }
+    .contacto h4 {
+        color: white;
+        font-size: 2rem;
         text-align: center;
         margin-bottom: 0;
         margin-top: 0.5rem;
@@ -813,15 +829,11 @@
     
     .contacto h4 {
         color: white;
-        font-size: 3.5rem;
+        font-size: 2rem;
         text-align: center;
         margin: 1rem;
     }
-    .contacto h4 span{
-        color: white;
-        font-size: 2.5rem;
-        text-align: center;
-    }
+   
     .contacto span {
         display: block;
         color: white;
